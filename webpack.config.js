@@ -19,7 +19,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.(sass|scss|css)$/,
         use: [
           /**
            * TODO: SASS 코드를 사용할수 있겠끔 sass-loader를 구성하세요.
