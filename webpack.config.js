@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
+  // TODO: 환경변수 NODE_ENV에 따라 development나 production 값을 설정하세요 
   mode: "development",
   entry: {
     main: "./src/app.js"
@@ -73,4 +74,5 @@ module.exports = {
       ? [new MiniCssExtractPlugin({ filename: `[name].css` })]
       : [])
   ]
+  // TODO: 여기에 최적화 설정을 구성하세요 
 };
