@@ -16,10 +16,10 @@ module.exports = {
   devServer: {
     overlay: true,
     stats: "errors-only",
-    port: 7070,
     proxy: {
-      "/api":  "http://localhost:8081"
-    }
+      "/api": "http://localhost:8081"
+    },
+    // TODO: 여기에 핫로딩을 설정하세요
   },
   module: {
     rules: [
